@@ -1,0 +1,3 @@
+[submodule "prediction_competition_2023"]
+	path = prediction_competition_2023
+	url = https://github.com/prio-data/prediction_competition_2023
