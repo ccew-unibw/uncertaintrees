@@ -66,8 +66,9 @@ NOTE: While this pipeline can be used to produce country-level models as well, w
 
 - Docker (if you want to run everything in Docker)
 - Python 3.11 and R (if you want to run the code directly on your machine)
+- ~ 64GB memory
 
-Running the _competition_pipeline_ took 1.5-2 weeks on a (somewhat dated) 40 CPU / 128GB memory setup.
+Running the `competition_pipeline.py` took 1.5-2 weeks on a (somewhat dated) 40 CPU / 128GB memory setup.
 
 
 ### a) Vanilla Python
