@@ -109,7 +109,7 @@ def calculate_metrics(
         "crps": partial(xs.crps_ensemble, member_dim="draw"),
         "ign": partial(
             ensemble_ignorance_score_xskillscore,
-            bins=[0, 2, 5, 10, 25, 50, 100, 250, 500, 1000],
+            bins=[0, 0.5, 2.5, 5.5, 10.5, 25.5, 50.5, 100.5, 250.5, 500.5, 1000.5],
             member_dim="draw",
         ),
         "mis": partial(
