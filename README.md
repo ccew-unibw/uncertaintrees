@@ -129,7 +129,8 @@ To quickly test the pipeline on your machine, you can append the `-t` flag eithe
 
 ## Reference
 When you are using (parts of) our work, please cite:
-*Mittermaier, D., Bohne, T., Hofer, M. & Racek, D. (2025). Forests of UncertainT(r)ees: Using Tree-based Ensembles to Estimate Probability Distributions of Future Conflict.*
+
+*Mittermaier, D., Bohne, T., Hofer, M. & Racek, D. (2025). Forests of UncertainT(r)ees: Using Tree-based Ensembles to Estimate Probability Distributions of Future Conflict. https://arxiv.org/abs/2512.06210.*
 
 ## Contributing
 We welcome contributions to enhance the models and methodologies used in this study. Please submit pull requests or open issues for any suggestions or improvements.
