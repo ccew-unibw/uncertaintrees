@@ -1,6 +1,6 @@
 # Forests of UncertainT(r)ees: Using Tree-based Ensembles to Estimate Probability Distributions of Future Conflict
 
-This repository contains the replication code for *Forests of UncertainT(r)ees: Using Tree-based Ensembles to Estimate Probability Distributions of Future Conflict*.
+This repository contains the replication code for *[Forests of UncertainT(r)ees: Using Tree-based Ensembles to Estimate Probability Distributions of Future Conflict](https://arxiv.org/abs/2512.06210.)*.
 
 ## Abstract
 _Predictions of fatalities from violent conflict on the PRIO-GRID-month (pgm) level are characterized by high levels of uncertainty, limiting their usefulness in practical applications.
