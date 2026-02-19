@@ -27,7 +27,7 @@ To download the data provided by the ViEWS team, run `./download_data.sh` if you
 
 At the heart of the project is the _tuning and prediction pipeline_, which is defined and controlled by the `competition_pipeline.py` file. You can adjust any setting related to the initial training and the generation of prediction directly in `competition_pipeline.py`. After producing predictions based on the training runs, `evaluation_pipeline.py` evaluates the predictions against the metrics and benchmark models defined in the invitation to the [ViEWS Prediction Challenge 2023](https://viewsforecasting.org/research/prediction-challenge-2023/). As with the _tuning and prediction pipeline_, settings can be adjusted in the script directly. 
 
-The `views_evaluation.ipynb` Jupyter notebook is the basis of our evaluation, and is used to pruduce the figures for the paper while providing a few additional insights.
+The `views_evaluation.ipynb` Jupyter notebook is the basis of our evaluation. It contains the code for the figures while also providing a few additional insights.
 
 
 ### Structure
