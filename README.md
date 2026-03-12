@@ -3,14 +3,7 @@
 This repository contains the replication code for *[Forests of UncertainT(r)ees: Using Tree-based Ensembles to Estimate Probability Distributions of Future Conflict](https://arxiv.org/abs/2512.06210.)*.
 
 ## Abstract
-_Predictions of fatalities from violent conflict on the PRIO-GRID-month (pgm) level are characterized by high levels of uncertainty, limiting their usefulness in practical applications.
-We discuss the two main sources of uncertainty for this prediction task, the nature of violent conflict and data limitations, embedding this in the wider literature on uncertainty
-quantification in machine learning. We develop a strategy to quantify uncertainty in conflict predictions yielding samples from a predictive distribution, allowing us to estimate
-prediction intervals. Our approach compares and combines multiple tree-based classifiers and distributional regressors in a custom auto-ML setup, estimating distributions for each
-pgm individually. We also test the integration of regional models in spatial ensembles as a potential avenue to reduce uncertainty. The models are able to consistently outperform a
-suite of benchmarks derived from conflict history in predictions up to one year in advance, with performance driven by regions where conflict was observed. With our evaluation, we
-emphasize the need to understand how a metric behaves for a given prediction problem, in our case characterized by extremely high zero-inflatedness. While not resulting in better
-predictions, the integration of smaller models does not decrease performance for this prediction task, opening avenues to integrate data sources with less spatial coverage in the future._
+_Predictions of fatalities from violent conflict on the PRIO-GRID-month (pgm) level are characterized by high levels of uncertainty, limiting their usefulness in practical applications. We discuss the two main sources of uncertainty for this prediction task, the nature of violent conflict and data limitations, embedding conflict prediction in the wider literature on uncertainty quantification in machine learning. Based on this, we develop a strategy to quantify uncertainty in conflict forecasting, shifting from traditional point predictions to full predictive distributions. Our approach combines multiple tree-based classifiers and distributional regressors in a custom AutoML setup, estimating distributions for each pgm individually. We also test the integration of regional models in spatial ensembles as a potential avenue to reduce uncertainty by lowering data requirements and accounting for systematic differences between conflict contexts. The models are able to consistently outperform a suite of benchmarks derived from conflict history in predictions up to one year in advance. Marginal differences in model-wide metrics emphasize the need to understand their behavior for a given prediction problem, in this case characterized by extremely high zero-inflatedness. Adressing this, we compliment our evaluation with a simulation experiment, which demonstrates that our models reflect meaningful performance improvements, which can be traced back to conflict-affected regions. Lastly, we show that the integration of regional models does not decrease performance, opening avenues to integrate additional data sources in the future._
 
 ### VIEWS challenge
 
@@ -27,7 +20,7 @@ To download the data provided by the ViEWS team, run `./download_data.sh` if you
 
 At the heart of the project is the _tuning and prediction pipeline_, which is defined and controlled by the `competition_pipeline.py` file. You can adjust any setting related to the initial training and the generation of prediction directly in `competition_pipeline.py`. After producing predictions based on the training runs, `evaluation_pipeline.py` evaluates the predictions against the metrics and benchmark models defined in the invitation to the [ViEWS Prediction Challenge 2023](https://viewsforecasting.org/research/prediction-challenge-2023/). As with the _tuning and prediction pipeline_, settings can be adjusted in the script directly. 
 
-The `views_evaluation.ipynb` Jupyter notebook is the basis of our evaluation, and is used to pruduce the figures for the paper while providing a few additional insights.
+The `uncertaintrees_evaluation.ipynb` Jupyter notebook is the basis of our evaluation. It contains the code for the figures while also providing a few additional insights.
 
 
 ### Structure

@@ -194,11 +194,13 @@ if __name__ == "__main__":
     fp_out = f"evaluation/"
     # we can of course only evaluate up to 2023
     test_windows = [2018, 2019, 2020, 2021, 2022, 2023]
-    bootstrap_kwargs = {
-        "sample_strategy": "random",
-        "sample_size": 10000,
-        "parallel_kwargs": {"n_jobs": 16, "verbose": 1},
-    }
+    # bootstrapping the metrics was tested and implemented, but eventually discarded for 
+    # methodological reasons
+    # bootstrap_kwargs = {
+    #     "sample_strategy": "random",
+    #     "sample_size": 10000,
+    #     "parallel_kwargs": {"n_jobs": 16, "verbose": 1},
+    # }
 
     # to be flexible in terms of which benchmarks to include etc. we define the function loading the data here
     def load_evaluation_data(year: int, fp_views: str):
@@ -234,5 +236,4 @@ if __name__ == "__main__":
             bootstrap=False,
             regenerate_metrics=True,
             return_results=False,
-            bootstrap_kwargs=bootstrap_kwargs,
         )
